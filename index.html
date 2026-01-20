@@ -49,30 +49,39 @@
     <!-- NAVBAR SECTION -->
     <nav :class="scrolled ? 'glass shadow-md py-2 md:py-3' : 'bg-transparent py-4 md:py-5'"
         class="fixed w-full z-50 transition-all duration-300 px-4 md:px-6">
-        <div class="max-w-7xl mx-auto flex justify-between items-center gap-2">
-            <div class="flex items-center gap-2 md:gap-3 font-bold shrink-0 transition-all"
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 items-center px-2">
+
+            <div class="flex justify-start items-center gap-2 md:gap-3 font-bold transition-all"
                 :class="scrolled ? 'text-primary scale-90 md:scale-95' : 'text-white scale-100'">
                 <img src="img/BERKATUSAHALOGO2.png" alt="Logo Berkat Usaha pengrajin kayu Sei Guntung Riau"
-                    class="h-8 md:h-14 w-auto object-contain">
+                    class="h-10 md:h-14 w-auto object-contain">
                 <div class="leading-none text-base md:text-2xl tracking-tighter hidden xs:block">
                     BERKAT<span class="text-accent">USAHA</span>
                 </div>
             </div>
-            <div class="hidden md:flex space-x-8 font-medium" :class="scrolled ? 'text-dark' : 'text-white'">
+
+            <div class="hidden md:flex justify-center space-x-8 font-medium"
+                :class="scrolled ? 'text-dark' : 'text-white'">
                 <a href="#beranda" class="hover:text-accent transition">Beranda</a>
                 <a href="#produk" class="hover:text-accent transition">Produk</a>
                 <a href="#tentang" class="hover:text-accent transition">Tentang</a>
                 <a href="#faq" class="hover:text-accent transition">FAQ</a>
             </div>
-            <a href="https://wa.me/6281213536091?text=Halo%20Berkat%20Usaha,%20saya%20ingin%20bertanya%20tentang%20produk%20dan%20desain%20kayu%20yang%20tersedia."
-                target="_blank" rel="noopener"
-                class="bg-secondary text-white px-3 py-1.5 md:px-6 md:py-2.5 rounded-full text-[10px] md:text-sm font-bold flex items-center gap-1.5 shrink-0">
-                <svg class="w-3.5 h-3.5 md:w-5 md:h-5 fill-current" viewBox="0 0 24 24">
-                    <path
-                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72 1.002 3.847 1.534 6.012 1.535h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
-                </svg>
-                <span class="whitespace-nowrap">Hubungi Kami</span>
-            </a>
+            <div class="flex justify-end">
+                <a href="https://wa.me/6281213536091?text=Halo%20Berkat%20Usaha,%20saya%20ingin%20bertanya%20tentang%20produk%20dan%20desain%20kayu%20yang%20tersedia."
+                    target="_blank" rel="noopener"
+                    class="group bg-secondary text-white px-3 py-1.5 md:px-4 md:py-2.5 rounded-full text-[10px] md:text-sm font-bold flex items-center transition-all duration-300">
+                    <svg class="w-4 h-4 md:w-5 md:h-5 fill-current shrink-0" viewBox="0 0 24 24">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72 1.002 3.847 1.534 6.012 1.535h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                    </svg>
+                    <span
+                        class="max-w-0 overflow-hidden whitespace-nowrap transition-all duration-300 group-hover:max-w-xs group-hover:ml-2 md:max-w-xs md:ml-2"
+                        :class="scrolled ? 'max-w-xs ml-2' : ''">
+                        Hubungi Kami
+                    </span>
+                </a>
+            </div>
         </div>
     </nav>
 
@@ -84,22 +93,24 @@
         <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/70 to-cream"></div>
 
         <div class="relative z-10 text-center px-6 max-w-4xl w-full">
-           
-           <span class="inline-block px-3 py-1 border border-accent text-accent rounded-full text-[10px] md:text-sm font-bold mb-6 tracking-widest uppercase bg-black/20">
-        Est. 2015 - Sei. Guntung
-    </span>
 
-    <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
-        Pengrajin Kayu & Furniture Custom <br class="hidden md:block"> di Sei. Guntung Riau
-    </h1>
+            <span
+                class="inline-block px-3 py-1 border border-accent text-accent rounded-full text-[10px] md:text-sm font-bold mb-6 tracking-widest uppercase bg-black/20">
+                Est. 2015 - Sei. Guntung
+            </span>
 
-    <p class="text-accent italic text-lg sm:text-2xl md:text-3xl font-semibold mb-8">
-        Sentuhan Kayu Abadi untuk Rumah Anda
-    </p>
+            <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
+                Pengrajin Kayu & Furniture Custom <br class="hidden md:block"> di Sei. Guntung Riau
+            </h1>
 
-    <p class="text-white/90 text-sm md:text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
-        Kami mengubah batang kayu pilihan menjadi karya seni fungsional dengan pengerjaan presisi dan material berkualitas.
-    </p>
+            <p class="text-accent italic text-lg sm:text-2xl md:text-3xl font-semibold mb-8">
+                Sentuhan Kayu Abadi untuk Rumah Anda
+            </p>
+
+            <p class="text-white/90 text-sm md:text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
+                Kami mengubah batang kayu pilihan menjadi karya seni fungsional dengan pengerjaan presisi dan material
+                berkualitas.
+            </p>
 
             <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center">
                 <a href="#produk"
