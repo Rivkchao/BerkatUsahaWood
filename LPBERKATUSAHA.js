@@ -25,21 +25,21 @@ document.addEventListener('alpine:init', () => {
                 name: 'Meja Makan Jati Scandinavian',
                 code: 'MM-JT-SC-01',
                 price: 'Mulai 2Jt-an',
-                img: 'img/productcustom.jpg',
+                img: 'img/mejascandinavian.jpg',
                 desc: 'Material Jati tua dengan finishing natural doff yang menonjolkan serat kayu asli.'
             },
             {
                 name: 'Kursi Kayu Ergonomis',
                 code: 'KU-ERG-01',
                 price: 'Rp 850.000',
-                img: 'img/productreadystock.jpg',
+                img: 'img/kursikayuergonomis.jpg',
                 desc: 'Didesain khusus dengan sandaran melengkung untuk kenyamanan kerja jangka panjang.'
             },
             {
                 name: 'Lemari Minimalis 2 Pintu',
                 code: 'LM-MN-2P-01',
                 price: 'Rp 4.200.000',
-                img: 'img/productpreorder.jpg',
+                img: 'img/lemariminimalis.jpg',
                 desc: 'Penyimpanan luas dengan sistem sliding door yang sangat hemat ruang.'
             }
         ],
