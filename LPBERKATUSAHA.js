@@ -44,15 +44,15 @@ document.addEventListener('alpine:init', () => {
             }
         ],
         faqs: [
-            { q: 'Bisa bawa desain custom?', a: 'Tentu! 80% klien kami membawa referensi sendiri. Kami akan diskusikan teknis dan jenis kayu yang cocok.' },
-            { q: 'Jenis kayu apa saja yang tersedia?', a: 'Kami menyediakan beberapa pilihan kayu seperti jati, mahoni, dan kayu lokal pilihan sesuai kebutuhan.' },
+            { q: 'Apakah bisa membawa desain custom untuk furniture kayu?', a: 'Tentu. Sekitar 80% klien kami membawa referensi desain sendiri untuk furniture kayu custom.Kami akan membantu menyesuaikan desain, ukuran, serta jenis kayu yang paling sesuai dengan kebutuhan ruang Anda.' },
+            { q: 'Jenis kayu apa saja yang digunakan untuk custom furniture?', a: 'Kami menyediakan beberapa pilihan kayu seperti jati, mahoni, dan kayu lokal pilihan sesuai kebutuhan custom furniture di Sei Guntung dan sekitarnya.' },
             { q: 'Apakah finishing aman untuk dapur atau makanan?', a: 'Kami menyediakan opsi finishing Natural Oil (food grade) yang aman untuk meja makan dan dapur.' },
-            { q: 'Bagaimana sistem harga?', a: 'Harga menyesuaikan jenis kayu, ukuran, desain, dan finishing. Silakan hubungi kami via WhatsApp untuk estimasi.' },
+            { q: 'Bagaimana sistem harga custom furniture kayu?', a: 'Harga menyesuaikan jenis kayu, ukuran, desain, dan finishing sesuai desain dan kebutuhan furniture kayu custom. Silakan hubungi kami via WhatsApp untuk estimasi.' },
             { q: 'Bagaimana sistem pembayarannya?', a: 'Pembayaran dilakukan dengan DP di awal, dan pelunasan setelah barang selesai sebelum pengiriman.' },
             { q: 'Berapa lama proses pengerjaan?', a: 'Estimasi pengerjaan 7–21 hari kerja tergantung tingkat kesulitan dan jumlah pesanan.' },
             { q: 'Apakah bisa survei atau ukur langsung ke lokasi?', a: 'Untuk area tertentu, kami dapat membantu survei lokasi. Silakan konsultasikan via WhatsApp.' },
-            { q: 'Apakah melayani kirim ke luar pulau?', a: 'Saat ini fokus utama kami Sei. Guntung dan sekitar Tembilahan, namun kami bisa bantu kordinasi ekspedisi kargo untuk luar pulau.' },
-            { q: 'Ada garansi produk?', a: 'Kami memberikan garansi konstruksi selama 6 bulan untuk pemakaian normal.' }
+            { q: 'Apakah melayani pengiriman furniture ke luar pulau?', a: 'Saat ini fokus utama kami Sei Guntung dan sekitar Tembilahan, namun kami bisa bantu koordinasi ekspedisi kargo untuk luar pulau.' },
+            { q: 'Apakah ada garansi untuk produk furniture?', a: 'Tentu. Kami memberikan garansi konstruksi selama 6 bulan untuk pemakaian normal.' }
         ]
     }));
 });
