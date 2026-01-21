@@ -412,25 +412,28 @@
                         <div class="space-y-4 text-gray-600 leading-relaxed text-lg">
                             <p>
                                 Berkat Usaha adalah pengrajin kayu lokal yang berlokasi di Sei Guntung, Riau, fokus pada
-                                pembuatan furniture kayu custom sesuai kebutuhan dan karakter ruang pelanggan. Kami melayani
+                                pembuatan furniture kayu custom sesuai kebutuhan dan karakter ruang pelanggan. Kami
+                                melayani
                                 pembuatan berbagai jenis perabot seperti lemari, meja, kitchen set, rak, dan furniture
                                 fungsional lainnya dengan pengerjaan rapi dan material pilihan.
                             </p>
                             <p>
-                                Sebagai pengrajin kayu berpengalaman, kami mengutamakan kualitas, ketepatan ukuran, serta
-                                komunikasi yang jelas sejak tahap desain hingga proses produksi. Setiap produk dibuat secara
+                                Sebagai pengrajin kayu berpengalaman, kami mengutamakan kualitas, ketepatan ukuran,
+                                serta
+                                komunikasi yang jelas sejak tahap desain hingga proses produksi. Setiap produk dibuat
+                                secara
                                 custom, menyesuaikan ukuran ruang, fungsi, dan preferensi desain pelanggan, baik untuk
                                 kebutuhan rumah tinggal, usaha, maupun proyek lainnya.
                             </p>
                             <p>
                                 Kami melayani pemesanan custom furniture di Sei Guntung dan berbagai wilayah di Riau,
-                                dengan pendekatan kerja yang fleksibel, transparan, dan mengutamakan kepuasan pelanggan. 
-                                Berkat Usaha percaya bahwa furniture bukan sekadar perabot, tetapi bagian penting dari 
+                                dengan pendekatan kerja yang fleksibel, transparan, dan mengutamakan kepuasan pelanggan.
+                                Berkat Usaha percaya bahwa furniture bukan sekadar perabot, tetapi bagian penting dari
                                 kenyamanan dan estetika ruang.
                             </p>
                             <p>
                                 Kami memahami tantangan cuaca dan kelembapan di daerah pesisir Riau. Itulah mengapa
-                                setiap material jati dan mahoni kami melalui proses seleksi ketat dan pengeringan alami 
+                                setiap material jati dan mahoni kami melalui proses seleksi ketat dan pengeringan alami
                                 untuk memastikan perabotan Anda tahan hingga puluhan tahun.
                             </p>
                         </div>
@@ -464,7 +467,7 @@
 
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-primary mb-10">
-                    FAQ Custom Furniture Kayu di Sei Guntung & Riau
+                    FAQ <br> Custom Furniture Kayu di Sei Guntung & Riau
                 </h2>
                 <p class="text-gray-500 mt-2">
                     Segala hal yang perlu Anda ketahui tentang pemesanan kami.
@@ -473,28 +476,122 @@
 
             <!-- FAQ LIST -->
             <div class="space-y-3">
-                <template x-for="(item, index) in faqs" :key="index">
-                    <div class="border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
-
-                        <button @click="activeFaq = (activeFaq === index ? null : index)"
-                            class="flex justify-between w-full p-6 text-left font-bold text-primary transition"
-                            :class="activeFaq === index ? 'bg-cream' : 'bg-white hover:bg-cream'">
-
-                            <span x-text="item.q"></span>
-
-                            <span class="text-secondary transition-transform"
-                                :class="activeFaq === index ? 'rotate-180' : ''">
-                                ▼
-                            </span>
-                        </button>
-
-                        <div x-show="activeFaq === index" x-collapse
-                            class="p-6 text-gray-600 bg-white border-t border-gray-50">
-                            <p x-text="item.a"></p>
-                        </div>
-
+                <div class="border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
+                    <button @click="activeFaq = (activeFaq === 1 ? null : 1)"
+                        class="flex justify-between w-full p-6 text-left font-bold text-primary transition"
+                        :class="activeFaq === 1 ? 'bg-cream' : 'bg-white hover:bg-cream'">
+                        <span>Apakah bisa membawa desain custom untuk furniture kayu?</span>
+                        <span class="text-secondary transition-transform"
+                            :class="activeFaq === 1 ? 'rotate-180' : ''">▼</span>
+                    </button>
+                    <div x-show="activeFaq === 1" x-collapse class="p-6 text-gray-600 bg-white border-t border-gray-50">
+                        <p>Tentu. Sekitar 80% klien kami membawa referensi desain sendiri untuk furniture kayu custom.
+                            Kami akan membantu menyesuaikan desain, ukuran, serta jenis kayu yang paling sesuai dengan
+                            kebutuhan ruang Anda.</p>
                     </div>
-                </template>
+                </div>
+
+                <div class="border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
+                    <button @click="activeFaq = (activeFaq === 2 ? null : 2)"
+                        class="flex justify-between w-full p-6 text-left font-bold text-primary transition"
+                        :class="activeFaq === 2 ? 'bg-cream' : 'bg-white hover:bg-cream'">
+                        <span>Jenis kayu apa saja yang digunakan untuk custom furniture?</span>
+                        <span class="text-secondary transition-transform"
+                            :class="activeFaq === 2 ? 'rotate-180' : ''">▼</span>
+                    </button>
+                    <div x-show="activeFaq === 2" x-collapse class="p-6 text-gray-600 bg-white border-t border-gray-50">
+                        <p>Kami menyediakan beberapa pilihan kayu seperti jati, mahoni, dan kayu lokal pilihan sesuai
+                            kebutuhan custom furniture di Sei Guntung dan sekitarnya.</p>
+                    </div>
+                </div>
+
+                <div class="border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
+                    <button @click="activeFaq = (activeFaq === 3 ? null : 3)"
+                        class="flex justify-between w-full p-6 text-left font-bold text-primary transition"
+                        :class="activeFaq === 3 ? 'bg-cream' : 'bg-white hover:bg-cream'">
+                        <span>Apakah finishing aman untuk dapur atau makanan?</span>
+                        <span class="text-secondary transition-transform"
+                            :class="activeFaq === 3 ? 'rotate-180' : ''">▼</span>
+                    </button>
+                    <div x-show="activeFaq === 3" x-collapse class="p-6 text-gray-600 bg-white border-t border-gray-50">
+                        <p>Kami menyediakan opsi finishing Natural Oil (food grade) yang aman untuk meja makan dan dapur.</p>
+                    </div>
+                </div>
+
+                <div class="border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
+                    <button @click="activeFaq = (activeFaq === 4 ? null : 4)"
+                        class="flex justify-between w-full p-6 text-left font-bold text-primary transition"
+                        :class="activeFaq === 4 ? 'bg-cream' : 'bg-white hover:bg-cream'">
+                        <span>Bagaimana sistem harga custom furniture kayu?</span>
+                        <span class="text-secondary transition-transform"
+                            :class="activeFaq === 4 ? 'rotate-180' : ''">▼</span>
+                    </button>
+                    <div x-show="activeFaq === 4" x-collapse class="p-6 text-gray-600 bg-white border-t border-gray-50">
+                        <p>Harga menyesuaikan jenis kayu, ukuran, desain, dan finishing sesuai desain dan kebutuhan furniture kayu custom. Silakan hubungi kami via WhatsApp untuk estimasi.</p>
+                    </div>
+                </div>
+
+                <div class="border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
+                    <button @click="activeFaq = (activeFaq === 5 ? null : 5)"
+                        class="flex justify-between w-full p-6 text-left font-bold text-primary transition"
+                        :class="activeFaq === 5 ? 'bg-cream' : 'bg-white hover:bg-cream'">
+                        <span>Bagaimana sistem pembayarannya?</span>
+                        <span class="text-secondary transition-transform"
+                            :class="activeFaq === 5 ? 'rotate-180' : ''">▼</span>
+                    </button>
+                    <div x-show="activeFaq === 5" x-collapse class="p-6 text-gray-600 bg-white border-t border-gray-50">
+                        <p>Pembayaran dilakukan dengan DP di awal, dan pelunasan setelah barang selesai sebelum pengiriman.</p>
+                    </div>
+                </div>
+
+                <div class="border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
+                    <button @click="activeFaq = (activeFaq === 6 ? null : 6)"
+                        class="flex justify-between w-full p-6 text-left font-bold text-primary transition"
+                        :class="activeFaq === 6 ? 'bg-cream' : 'bg-white hover:bg-cream'">
+                        <span>Berapa lama proses pengerjaan?</span>
+                        <span class="text-secondary transition-transform"
+                            :class="activeFaq === 6 ? 'rotate-180' : ''">▼</span>
+                    </button>
+                    <div x-show="activeFaq === 6" x-collapse class="p-6 text-gray-600 bg-white border-t border-gray-50">
+                        <p>Estimasi pengerjaan 7–21 hari kerja tergantung tingkat kesulitan dan jumlah pesanan.</p>
+                    </div>
+                </div>
+                <div class="border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
+                    <button @click="activeFaq = (activeFaq === 7 ? null : 7)"
+                        class="flex justify-between w-full p-6 text-left font-bold text-primary transition"
+                        :class="activeFaq === 7 ? 'bg-cream' : 'bg-white hover:bg-cream'">
+                        <span>Apakah bisa survei atau ukur langsung ke lokasi?</span>
+                        <span class="text-secondary transition-transform"
+                            :class="activeFaq === 7 ? 'rotate-180' : ''">▼</span>
+                    </button>
+                    <div x-show="activeFaq === 7" x-collapse class="p-6 text-gray-600 bg-white border-t border-gray-50">
+                        <p>Untuk area tertentu, kami dapat membantu survei lokasi. Silakan konsultasikan via WhatsApp.</p>
+                    </div>
+                </div>
+                <div class="border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
+                    <button @click="activeFaq = (activeFaq === 8 ? null : 8)"
+                        class="flex justify-between w-full p-6 text-left font-bold text-primary transition"
+                        :class="activeFaq === 8 ? 'bg-cream' : 'bg-white hover:bg-cream'">
+                        <span>Apakah melayani pengiriman furniture ke luar pulau?</span>
+                        <span class="text-secondary transition-transform"
+                            :class="activeFaq === 8 ? 'rotate-180' : ''">▼</span>
+                    </button>
+                    <div x-show="activeFaq === 8" x-collapse class="p-6 text-gray-600 bg-white border-t border-gray-50">
+                        <p>Saat ini fokus utama kami Sei Guntung dan sekitar Tembilahan, namun kami bisa bantu koordinasi ekspedisi kargo untuk luar pulau.</p>
+                    </div>
+                </div>
+                <div class="border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
+                    <button @click="activeFaq = (activeFaq === 9 ? null : 9)"
+                        class="flex justify-between w-full p-6 text-left font-bold text-primary transition"
+                        :class="activeFaq === 9 ? 'bg-cream' : 'bg-white hover:bg-cream'">
+                        <span>Apakah ada garansi untuk produk furniture?</span>
+                        <span class="text-secondary transition-transform"
+                            :class="activeFaq === 9 ? 'rotate-180' : ''">▼</span>
+                    </button>
+                    <div x-show="activeFaq === 9" x-collapse class="p-6 text-gray-600 bg-white border-t border-gray-50">
+                        <p>Tentu. Kami memberikan garansi konstruksi selama 6 bulan untuk pemakaian normal.</p>
+                    </div>
+                </div>
             </div>
 
         </div>
