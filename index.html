@@ -30,6 +30,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap"
         rel="stylesheet">
     <link rel="icon" href="img/BERKATUSAHALOGO.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/BERKATUSAHALOGO.png">
 
     <!-- LocalBusiness schema -->
     <script type="application/ld+json">
@@ -55,6 +56,7 @@
     }
     </script>
 
+    <!-- Website schema -->
     <script type="application/ld+json">
     {
     "@context": "https://schema.org",
@@ -64,12 +66,94 @@
     }
     </script>
 
+    <!-- FAQ schema -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+        "@type": "Question",
+        "name": "Apakah bisa membawa desain custom untuk furniture kayu?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tentu. Sekitar 80% klien kami membawa referensi desain sendiri untuk furniture kayu custom. Kami akan membantu menyesuaikan desain, ukuran, serta jenis kayu yang paling sesuai dengan kebutuhan ruang Anda."
+        }
+        },
+        {
+        "@type": "Question",
+        "name": "Jenis kayu apa saja yang digunakan untuk custom furniture?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kami menyediakan beberapa pilihan kayu seperti jati, mahoni, dan kayu lokal pilihan sesuai kebutuhan custom furniture di Sei Guntung dan sekitarnya."
+        }
+        },
+        {
+        "@type": "Question",
+        "name": "Apakah finishing aman untuk dapur atau makanan?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kami menyediakan opsi finishing Natural Oil (food grade) yang aman untuk meja makan dan dapur."
+        }
+        },
+        {
+        "@type": "Question",
+        "name": "Bagaimana sistem harga custom furniture kayu?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Harga menyesuaikan jenis kayu, ukuran, desain, dan finishing sesuai desain dan kebutuhan furniture kayu custom. Silakan hubungi kami melalui WhatsApp untuk estimasi harga."
+        }
+        },
+        {
+        "@type": "Question",
+        "name": "Bagaimana sistem pembayarannya?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pembayaran dilakukan dengan DP di awal, dan pelunasan setelah barang selesai sebelum pengiriman."
+        }
+        },
+        {
+        "@type": "Question",
+        "name": "Berapa lama proses pengerjaan?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Estimasi pengerjaan 7 hingga 21 hari kerja tergantung tingkat kesulitan desain dan jumlah pesanan."
+        }
+        },
+        {
+        "@type": "Question",
+        "name": "Apakah bisa survei atau ukur langsung ke lokasi?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Untuk area tertentu, kami dapat membantu survei atau pengukuran langsung ke lokasi. Silakan konsultasikan terlebih dahulu melalui WhatsApp."
+        }
+        },
+        {
+        "@type": "Question",
+        "name": "Apakah melayani pengiriman furniture ke luar pulau?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Saat ini fokus utama layanan kami di Sei Guntung dan sekitar Tembilahan. Namun, kami dapat membantu koordinasi ekspedisi kargo untuk pengiriman ke luar pulau."
+        }
+        },
+        {
+        "@type": "Question",
+        "name": "Apakah ada garansi untuk produk furniture?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kami memberikan garansi konstruksi selama 6 bulan untuk pemakaian normal."
+        }
+        }
+    ]
+    }
+    </script>
+
     <!-- AlpineJs Data-->
     <script src="LPBERKATUSAHA.js"></script>
 
     <!-- Styling Section -->
     <link rel="stylesheet" href="LPBERKATUSAHA.css">
-    </>
+</head>
 
 <body class="bg-cream text-dark" x-data="mainData" @scroll.window="scrolled = (window.pageYOffset > 20)">
 
@@ -201,10 +285,11 @@
             <div>
                 <h2 class="text-4xl font-bold text-primary">Koleksi Furniture Kayu Solid</h2>
                 <p class="text-gray-500 mt-2">
-                    Cari tempat Custom Furniture di Sei Guntung? Pilih koleksi kayu solid ready stock atau pesan desain custom sesuai keinginan Anda. Cek di sini!
+                    Cari tempat Custom Furniture di Sei Guntung? Pilih koleksi kayu solid ready stock atau pesan desain
+                    custom sesuai keinginan Anda. Cek di sini!
                 </p>
             </div>
-           
+
         </div>
 
         <!-- LIST PRODUCT -->
@@ -320,39 +405,54 @@
                 </div>
 
                 <div class="order-1 md:order-2">
-                    <span class="text-secondary font-bold tracking-[0.2em] uppercase text-sm block mb-4">Warisan Sei.
-                        Guntung</span>
-                    <h2 class="text-4xl md:text-5xl font-bold text-primary mb-6 leading-tight">Berawal dari Garasi,
-                        Menuju <span class="text-accent italic">Karya Abadi</span></h2>
-                    <div class="space-y-4 text-gray-600 leading-relaxed text-lg">
-                        <p>
-                            Berdiri sejak tahun 2015 di sudut <b>Sei. Guntung</b>, Berkat Usaha bukan sekadar bengkel
-                            kayu biasa. Kami adalah sekumpulan pengrajin lokal yang percaya bahwa setiap potong kayu
-                            memiliki <i>"nyawa"</i> yang bisa diubah menjadi keindahan.
-                        </p>
-                        <p>
-                            Kami memahami tantangan cuaca dan kelembapan di daerah pesisir Riau. Itulah mengapa setiap
-                            material jati dan mahoni kami melalui proses seleksi ketat dan pengeringan alami untuk
-                            memastikan perabotan Anda tahan hingga puluhan tahun.
-                        </p>
-                    </div>
+                    <h2 class="text-secondary font-bold tracking-[0.2em] uppercase text-sm block mb-4"> Pengrajin Kayu
+                        Lokal Berpengalaman di Sei Guntung</h2>
+                    <span class="text-4xl md:text-5xl font-bold text-primary mb-6 leading-tight">Berawal dari Garasi,
+                        Menuju <span class="text-accent italic">Karya Abadi</span>
+                        <div class="space-y-4 text-gray-600 leading-relaxed text-lg">
+                            <p>
+                                Berkat Usaha adalah pengrajin kayu lokal yang berlokasi di Sei Guntung, Riau, fokus pada
+                                pembuatan furniture kayu custom sesuai kebutuhan dan karakter ruang pelanggan. Kami melayani
+                                pembuatan berbagai jenis perabot seperti lemari, meja, kitchen set, rak, dan furniture
+                                fungsional lainnya dengan pengerjaan rapi dan material pilihan.
+                            </p>
+                            <p>
+                                Sebagai pengrajin kayu berpengalaman, kami mengutamakan kualitas, ketepatan ukuran, serta
+                                komunikasi yang jelas sejak tahap desain hingga proses produksi. Setiap produk dibuat secara
+                                custom, menyesuaikan ukuran ruang, fungsi, dan preferensi desain pelanggan, baik untuk
+                                kebutuhan rumah tinggal, usaha, maupun proyek lainnya.
+                            </p>
+                            <p>
+                                Kami melayani pemesanan custom furniture di Sei Guntung dan berbagai wilayah di Riau,
+                                dengan pendekatan kerja yang fleksibel, transparan, dan mengutamakan kepuasan pelanggan. 
+                                Berkat Usaha percaya bahwa furniture bukan sekadar perabot, tetapi bagian penting dari 
+                                kenyamanan dan estetika ruang.
+                            </p>
+                            <p>
+                                Kami memahami tantangan cuaca dan kelembapan di daerah pesisir Riau. Itulah mengapa
+                                setiap material jati dan mahoni kami melalui proses seleksi ketat dan pengeringan alami 
+                                untuk memastikan perabotan Anda tahan hingga puluhan tahun.
+                            </p>
+                        </div>
 
-                    <div class="grid grid-cols-2 gap-6 mt-10">
-                        <div class="flex items-start gap-3">
-                            <div class="text-accent text-2xl font-bold">01.</div>
-                            <div>
-                                <h5 class="font-bold text-primary">Presisi</h5>
-                                <p class="text-sm text-gray-500">Setiap sudut diukur dengan ketelitian milimeter.</p>
+                        <div class="grid grid-cols-2 gap-6 mt-10">
+                            <div class="flex items-start gap-3">
+                                <div class="text-accent text-2xl font-bold">01.</div>
+                                <div>
+                                    <h5 class="font-bold text-primary">Presisi</h5>
+                                    <p class="text-sm text-gray-500">Setiap sudut diukur dengan ketelitian milimeter.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="text-accent text-2xl font-bold">02.</div>
+                                <div>
+                                    <h5 class="font-bold text-primary">Jujur</h5>
+                                    <p class="text-sm text-gray-500">Material 100% kayu solid tanpa campuran kayu lapis.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="flex items-start gap-3">
-                            <div class="text-accent text-2xl font-bold">02.</div>
-                            <div>
-                                <h5 class="font-bold text-primary">Jujur</h5>
-                                <p class="text-sm text-gray-500">Material 100% kayu solid tanpa campuran kayu lapis.</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -363,7 +463,9 @@
         <div class="max-w-3xl mx-auto">
 
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-primary">Punya Pertanyaan?</h2>
+                <h2 class="text-3xl font-bold text-primary mb-10">
+                    FAQ Custom Furniture Kayu di Sei Guntung & Riau
+                </h2>
                 <p class="text-gray-500 mt-2">
                     Segala hal yang perlu Anda ketahui tentang pemesanan kami.
                 </p>
@@ -417,14 +519,16 @@
                         kebutuhan furniture rumah dan kantor di Sei. Guntung dan sekitarnya.
                     </p>
                     <div class="flex gap-4">
-                        <a href="https://instagram.com/" target="_blank" rel="noopener"
+                        <a href="https://instagram.com/sharer/sharer.php?u=https://berkatusaha.rivkyps.my.id/"
+                            target="_blank" rel="noopener"
                             class="w-10 h-10 bg-white/5 flex items-center justify-center rounded-full hover:bg-secondary transition hover:scale-110">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                 <path
                                     d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                             </svg>
                         </a>
-                        <a href="https://facebook.com/" target="_blank" rel="noopener"
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://berkatusaha.rivkyps.my.id/"
+                            target="_blank" rel="noopener"
                             class="w-10 h-10 bg-white/5 flex items-center justify-center rounded-full hover:bg-secondary transition hover:scale-110">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                 <path
@@ -488,7 +592,8 @@
 
             <div class="flex flex-col md:flex-row">
                 <div class="md:w-1/2 h-48 sm:h-56 md:h-auto shrink-0">
-                    <img :src="selectedProduct.img" class="w-full h-full object-cover">
+                    <img :src="selectedProduct.img"
+                        :alt="selectedProduct.name + ' custom furniture kayu solid Sei Guntung'">
                 </div>
 
                 <div class="md:w-1/2 p-5 md:p-8">
